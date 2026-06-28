@@ -18,5 +18,5 @@ transform = Compose([
 dataset = ModelNet(root='data/ModelNet10', name='10', train=True, transform=transform)
 
 
-ect = compute_local_ect(dataset)
+ect = compute_local_ect(dataset)   
 

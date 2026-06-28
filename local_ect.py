@@ -2,7 +2,7 @@ import torch
 from torch_geometric.data import Batch, Data
 from torch_geometric.datasets import Planetoid, HeterophilousGraphDataset, Amazon, Reddit, WebKB, WikipediaNetwork, Actor, LINKXDataset, WikiCS, Coauthor
 import numpy as np
-from torch_geometric.utils.subgraph import k_hop_subgraph
+from torch_geometric.utils import k_hop_subgraph
 from matplotlib import pyplot
 
 from layers.ect import EctLayer

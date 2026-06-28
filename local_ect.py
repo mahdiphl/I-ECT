@@ -13,8 +13,6 @@ from sklearn.metrics import accuracy_score, roc_auc_score
 import xgboost as xgb
 
 
-dataset = WebKB(root='/tmp/Wisconsin',name='Wisconsin')
-
 def compute_local_ect(dataset,
                       radius=1,
                       ECT_TYPE='points',

@@ -20,16 +20,9 @@ def compute_local_ect(dataset,
                       DEVICE = 'cpu',
                       subsample_size=None
 ):
-    '''
-    dataset: pytorch geometric graph dataset
-    radius: number of hops for the local graph neighborhoods (i.e. `k` in the `k_hop_subgraph` function)
-    ECT_TYPE: type of structural information used for the ECT calculation; can be 'points', 'edges' or 'faces'
-    NUM_THETAS: the approximation parameter for the resulting ECT; the computation outputs a NUM_THETAS*NUM_THETAS dimensional vector.
-    DEVICE: device to be used for the computation
-    subsample_size: number of randomly sampled nodes in `dataset` to compute the local ECT for; default is None which means that local ECT is determined for all nodes in the input graph.
-    '''
+ 
 
-    data = dataset[0]
+    data = dataset[1057]
     features = data.x
     if subsample_size != None:
         np.random.seed(42)
